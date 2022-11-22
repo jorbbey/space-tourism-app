@@ -1,10 +1,10 @@
 <template>
-  <div id="wrapper">
+  <div id="wrapper" class="h-screen">
     <div
       class="flex lg:flex-row items-center justify-around sm:flex-col-reverse body-line"
       style="width: 90%; margin: 200px auto;"
     >
-      <div class="flex flex-col w-1/2 sm:text-center">
+      <div class="flex flex-col w-full md:w-1/2 sm:text-center">
         <h3 class="text-white sm:text-center">SO YOU WANT TO TRAVEL TO</h3>
         <h1
           class="text-white tracking-widest sm:text-center"
@@ -45,41 +45,13 @@ export default {
 
 <style>
 body {
-  background: url('@/assets/home/background-home-desktop.jpg') no-repeat center
+  background: url('@/assets/destination/background-destination-desktop.jpg') no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.nav-bar {
-  background: linear-gradient(
-    to right,
-    rgb(1, 4, 29),
-    transparent,
-    transparent,
-    rgb(1, 4, 29)
-  );
-}
-
-.nav-text {
-  color: rgb(221, 217, 217);
-}
-
-.nav-text::after {
-  content: '';
-  width: 0%;
-  height: 2.5px;
-  background: rgb(221, 217, 217);
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-text:hover::after {
-  width: 100%;
-}
-
 .mobile-nav {
   color: rgb(221, 217, 217);
   background: rgb(3, 3, 44);

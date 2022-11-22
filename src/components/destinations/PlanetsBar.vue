@@ -1,7 +1,7 @@
 <template>
-  <nav class="flex justify-around items-center my-10 w-1/2">
+  <nav class="flex justify-around items-center my-10 w-full" style="margin: 0 auto;">
     <div
-      class="lg:flex bg-transparent right-24 absolute h-14 shadow-2xl drop-shadow-2xl sm:hidden"
+      class="flex bg-transparent h-14 shadow-2xl drop-shadow-2xl nav-bar"
     >
       <router-link
         to="/moon"

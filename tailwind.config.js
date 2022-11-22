@@ -415,7 +415,8 @@ module.exports = {
       '6xl': ['3.75rem', { lineHeight: '1' }],
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
-      '9xl': ['8rem', { lineHeight: '1' }],
+      '9xl': [ '8rem', { lineHeight: '1' } ],
+      '10xl': '72px'
     },
     fontWeight: {
       thin: '100',

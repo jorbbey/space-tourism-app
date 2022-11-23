@@ -1,10 +1,10 @@
 <template>
-  <div id="wrapper" class="h-screen">
+  <div id="wrapper" class="h-screen -mt-52">
     <div
       class="flex lg:flex-row items-center justify-around sm:flex-col-reverse body-line"
       style="width: 90%; margin: 200px auto;"
     >
-      <div class="flex flex-col w-full md:w-1/2 sm:text-center">
+      <div class="flex flex-col w-full md:w-1/2 sm:text-center mt-56">
         <h3 class="text-white sm:text-center">SO YOU WANT TO TRAVEL TO</h3>
         <h1
           class="text-white tracking-widest sm:text-center"
@@ -22,12 +22,12 @@
         </p>
       </div>
       <div
-        class="bg-white rounded-full sm:mb-20 sm:text-center cursor-pointer"
+        class="bg-white rounded-full sm:mb-20 sm:text-center cursor-pointer  mt-56"
         style="height: 200px; width: 200px;"
       >
         <p
           class="text-blue-800 text-xl tracking-widest sm:text-center cursor-pointer"
-          style="margin: 90px 50px;"
+          style="margin: 96px 50px;"
         >
           EXPLORE
         </p>
@@ -43,9 +43,9 @@ export default {
 }
 </script>
 
-<style>
-body {
-  background: url('@/assets/destination/background-destination-desktop.jpg') no-repeat center
+<style scoped>
+#wrapper {
+  background: url('@/assets/home/background-home-desktop.jpg') no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

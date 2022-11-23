@@ -40,3 +40,14 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+nav{
+  background: url('@/assets/destination/background-destination-desktop.jpg') no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+</style>

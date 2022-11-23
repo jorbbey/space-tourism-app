@@ -1,7 +1,7 @@
 <template>
  <div id="wrapper"
     class="flex flex-col md:flex-row justify-around items-center relative"
-    style="width: 90%; height: 150vh; margin: 120px auto;"
+    style="width: 100%; height: 150vh; margin: 0px auto;"
   >
     <div
       class="flex flex-col justify-around items-center w-full md:w-1/2 h-screen"
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style>
-/* #wrapper{
+#wrapper{
   background: url('@/assets/destination/background-destination-desktop.jpg') no-repeat center
     center fixed;
   -webkit-background-size: cover;
@@ -55,6 +55,6 @@ export default {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-} */
+}
 
 </style>

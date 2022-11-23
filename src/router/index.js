@@ -9,7 +9,7 @@ import EuropaPage from '../components/destinations/planets/EuropaPage'
 import TitanPage from '../components/destinations/planets/TitanPage'
 import TechPage from '../components/TechPage'
 const routes = [
-  { path: '/', component: HomePage },
+  { path: '/home', component: HomePage },
   { path: '/destination', component: DestinationPage },
   { path: '/mars', component: MarsPage },
   { path: '/moon', component: MoonPage },

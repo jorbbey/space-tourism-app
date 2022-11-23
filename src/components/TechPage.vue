@@ -1,8 +1,11 @@
 <template>
-  <div id="wrapper" class="my-48">
+  <div id="wrapper" class="" style="height: 150vh;">
+
     <h1 class="text-white text-2xl uppercase text-left mx-10">
       space launch 101
     </h1>
+
+    <transition name="tech-page">
     <div
       class="flex flex-col-reverse md:flex-row justify-around items-center h-auto md:h-screen absolute"
       style="width: 95%; margin: 100px 2.5%;"
@@ -47,8 +50,10 @@
         />
       </div>
     </div>
+      </transition>
 
-    <div
+<transition name="tech-page"> 
+     <div
       class="flex flex-col-reverse md:flex-row justify-around items-center h-auto md:h-screen absolute"
       style="width: 95%; margin: 100px 2.5%;"
       v-if="techSlide == 1"
@@ -91,8 +96,10 @@
         />
       </div>
     </div>
-
-    <div
+</transition>
+    
+    <transition name="tech-page"> 
+      <div
       class="flex flex-col-reverse md:flex-row justify-around items-center h-auto md:h-screen absolute"
       style="width: 95%; margin: 100px 2.5%;"
       v-if="techSlide == 2"
@@ -136,6 +143,8 @@
         />
       </div>
     </div>
+    </transition>
+   
   </div>
 </template>
 
@@ -156,4 +165,26 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+#wrapper{
+  background: url('@/assets/technology/background-technology-desktop.jpg') no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+.tech-page-enter-active,
+.tech-page-leave-active {
+  transition: all 1s ease;
+}
+
+.tech-page-enter-from {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.tech-page-leave-to {
+  opacity: 0;
+   transform: translateX(100%); 
+}
+</style>

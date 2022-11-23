@@ -5,7 +5,7 @@
       style="width: 90%; margin: 200px auto;"
     >
       <div class="flex flex-col w-full md:w-1/2 sm:text-center mt-56">
-        <h3 class="text-white sm:text-center">SO YOU WANT TO TRAVEL TO</h3>
+        <h3 class="text-white sm:text-center uppercase">so you want to travel to</h3>
         <h1
           class="text-white tracking-widest sm:text-center"
           style="font-size: 82px;"
